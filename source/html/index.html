@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Project Name - описание" />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Test Company — Главная</title>
+  </head>
+  <body>
+    <div style="display: none">@@include("build/img/sprite_auto.svg")</div>
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <header class="header">
+          <div class="content">
+            <div class="header__logo-wrapper">
+              <img src="./img/logo.png" width="86" height="43" alt="Логотип" />
+            </div>
+
+            <nav class="header__navigation navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#advantages" class="navigation__link">Клиентам</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="#" class="header__login js-login">
+              <svg width="24" height="24">
+                <use xlink:href="#user-icon"></use>
+              </svg>
+              Войти
+            </a>
+          </div>
+        </header>
+
+        <div class="promo">
+          <div class="content">
+            <h2 class="promo__heading">
+              Подбор авто в лизинг по выгодной цене
+            </h2>
+            <p class="promo__text">
+              IT платформа по быстрому поиску автомобиля от официальных дилеров
+              РФ
+            </p>
+            <a href="#" class="promo__button button btn-reset">Регистрация</a>
+            <div class="promo__image-wrapper">
+              <img src="./img/man-with-car.png" alt="Промо-картинка" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="main">
+        <h1 class="visually-hidden">Test Company</h1>
+
+        <section id="#advantages" class="advantages">
+          <div class="content">
+            <h2 class="advantages__heading">
+              Меньше условий – больше возможностей
+            </h2>
+
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Экономия времени</h3>
+                <p class="advantages__text">
+                  Дополнительный канал потенциальных клиентов, готовых
+                  приобрести автомобиль, без затрат на рекламу и маркетинг.
+                </p>
+                <div class="advantages__image-wrapper">
+                  <img
+                    src="./img/man-with-clock.png"
+                    alt="Картинка преимущества"
+                  />
+                </div>
+              </li>
+
+              <li class="advantages__item">
+                <h3 class="advantages__title">Никаких задержек</h3>
+                <p class="advantages__text">
+                  Вы получаете запросы сразу же после отправки клиентом.
+                </p>
+                <div class="advantages__image-wrapper">
+                  <img
+                    src="./img/man-with-mail.png"
+                    alt="Картинка преимущества"
+                  />
+                </div>
+              </li>
+
+              <li class="advantages__item">
+                <h3 class="advantages__title">Максимальная информативность</h3>
+                <p class="advantages__text">
+                  В каждой заявке указан регион поиска, марка и модель авто, а
+                  так же индивидуальные запросы клиента.
+                </p>
+                <div class="advantages__image-wrapper">
+                  <img
+                    src="./img/man-with-info.png"
+                    alt="Картинка преимущества"
+                  />
+                </div>
+              </li>
+
+              <li class="advantages__item">
+                <h3 class="advantages__title">Удобство общения</h3>
+                <p class="advantages__text">
+                  Для каждого запроса у вас открыт чат с клиентом с возможностью
+                  отправки документов.
+                </p>
+                <div class="advantages__image-wrapper">
+                  <img
+                    src="./img/man-with-dialog.png"
+                    alt="Картинка преимущества"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="registration">
+          <div class="container">
+            <h2 class="registration__heading">
+              Регистрируйся и получай актуальные запросы на автомобили от
+              заинтерисованных клиентов
+            </h2>
+            <a href="#" class="registration__button button btn-reset"
+              >Регистрация</a
+            >
+          </div>
+        </section>
+      </main>
+
+      <div class="modal js-modal">
+        <div class="modal__fade">
+          <div class="modal__content">
+            <h2 class="modal__heading">Авторизация</h2>
+            <button class="modal__close btn-reset js-modal-close">
+              <svg width="14" height="14">
+                <use xlink:href="#close-icon"></use>
+              </svg>
+            </button>
+            <form class="modal__form">
+              <label class="modal__label" for="email">Email</label>
+              <input
+                class="modal__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Введите e-mail"
+                required
+              />
+              <label class="modal__label" for="password">Пароль</label>
+              <input
+                class="modal__input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Введите пароль"
+                required
+              />
+              <button class="modal__button btn-reset button" type="submit">
+                Войти
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

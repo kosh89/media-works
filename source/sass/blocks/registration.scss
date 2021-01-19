@@ -1,0 +1,57 @@
+.registration {
+  padding: 70px 15px 50px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    min-height: 371px;
+    margin: 0 auto;
+    padding: 70px;
+    background: url(../img/background-cars.png) right 50%,
+      linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    @include viewport--md {
+      padding: 40px;
+    }
+
+    @include viewport--sm {
+      padding: 30px 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @include viewport--lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include viewport--md {
+    padding-top: 20px;
+  }
+
+  @include viewport--sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.registration__heading {
+  margin: 0;
+  margin-bottom: 46px;
+  padding: 0;
+  max-width: 550px;
+  font-family: $whitney;
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 500;
+  color: $color-white;
+
+  @include viewport--sm {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

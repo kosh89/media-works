@@ -1,0 +1,58 @@
+.header-wrapper {
+  min-height: 700px;
+  background: linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
+
+  @include viewport--sm {
+    min-height: 600px;
+  }
+}
+
+.header {
+  .content {
+    display: flex;
+    min-height: 98px;
+    align-items: center;
+
+    @include viewport--sm {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+  }
+
+  &__logo-wrapper {
+    @include viewport--sm {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__navigation {
+    margin-left: auto;
+    margin-right: 100px;
+
+    @include viewport--sm {
+      margin: 0;
+    }
+  }
+
+  &__login {
+    position: relative;
+    padding-left: 36px;
+    padding-right: 16px;
+
+    font-family: $whitney;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $color-white;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    @include viewport--sm {
+      padding-right: 0;
+    }
+  }
+}
